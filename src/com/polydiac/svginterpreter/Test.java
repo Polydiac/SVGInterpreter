@@ -9,8 +9,8 @@ import java.awt.*;
  */
 public class Test {
     public static void main(String[]args){
-        Bildschirm bs = new Bildschirm();
-        AdvStift st = new AdvStift();
+        //Bildschirm bs = new Bildschirm();
+        // AdvStift st = new AdvStift();
         /*st.setzeFarbe("#e28356");
         st.bewegeBis(500, 500);
         st.drawBezierRel(117.14286, -84.28572, 270, -17.14286, 152.85714, 67.14288);
@@ -45,7 +45,7 @@ public class Test {
             st.bewegeBis(bs.breite(), i);
             st.hoch();
         }*/
-        st.drawQuadBezier(100.0F, 100.0F, 200.0F, 400.00F, 300.0F, 300.0F);
+        /*st.drawQuadBezier(100.0F, 100.0F, 200.0F, 400.00F, 300.0F, 300.0F);
         st.setzeFarbe("#0000FF");
         st.setzeLinienbreite(2);
         st.drawBezierAbs(100.0, 200.0, 300.0, 400.0, 200.0, 500.0);
@@ -58,6 +58,9 @@ public class Test {
         st.drawEllipseE(200,100);
         st.runter();
         st.setzeFarbe(Color.black);
-        st.bewegeBis(700, 500);
+        st.bewegeBis(700, 500);*/
+        SVG svg = new SVG();
+        svg.read("C:\\Projekte\\Java\\SVGinterpreter\\src\\com\\polydiac\\svginterpreter\\quadratRAW.svg");
+        svg.parse();
     }
 }
